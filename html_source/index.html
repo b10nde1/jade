@@ -7,20 +7,10 @@
     <link rel="stylesheet" href="assets/css/foundation.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/script.js"></script>
   </head>
   <body>
-    <div id="my_video_player">
-      <video id="video_player" preload="auto" poster="assets/img/poster_preload.png" onclick="playPause()">
-        <source src="assets/videos/Alonzo - Binta.mp4" type="video/mp4">
-      </video>
-      <div id="my_video_controller">
-        <button id="playpausebtn"></button>
-        <input onmousemove="displayTimer()" id="seekslider" type="range" min="0" max="100" value="0" step="1"><span class="tooltiptext" id="tooltiptext">Firy zay </span><span id="curtimetext">00:00 /</span><span id="durtimetext">00:00</span>
-        <button id="mutebtn">Mangina oe</button>
-        <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
-        <button id="fullscreenbtn">[ fenoy ny tanana ]</button>
-      </div>
+    <div class="flex-video widescreen vimeo">
+      <iframe src="assets/videos/Alonzo - Binta.mp4" width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
     <script src="assets/js/vendor/what-input.js"></script>
     <script src="assets/js/vendor/foundation.min.js"></script>
